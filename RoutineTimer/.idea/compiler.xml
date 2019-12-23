@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RoutineTimer" />
+        <module name="hellofx" />
         <module name="RoutineTimer2" />
+        <module name="RoutineTimer" />
       </profile>
     </annotationProcessing>
   </component>
