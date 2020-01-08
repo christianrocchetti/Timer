@@ -13,24 +13,33 @@ import java.io.IOException;
  */
 public class App extends Application {
 
-    private static Scene scene;
+    private static Stage homeWindow;
+    private static Scene primaryScene;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("/primary"));
-        scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
-        stage.setScene(scene);
+        primaryScene = new Scene(loadFXML("/sample"));
+        primaryScene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
+        stage.setScene(primaryScene);
+        stage.setMinHeight(480);
+        stage.setMinWidth(640);
+        homeWindow = stage;
         stage.show();
     }
 
     static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
+        primaryScene.setRoot(loadFXML(fxml));
+    }
+
+    static void minimizeWindow(boolean flag){
+        homeWindow.setIconified(flag);
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
+
 
     public static void main(String[] args) {
         launch();

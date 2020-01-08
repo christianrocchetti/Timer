@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" prefHeight="436.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Controller">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="0.0" valignment="CENTER" />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="269.0" minWidth="309.0" prefHeight="440.0" prefWidth="691.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="-4.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="442.0" prefWidth="702.0" spacing="20.0">
+               <children>
+                  <GridPane prefHeight="111.0" prefWidth="694.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="47.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="174.0" minHeight="0.0" prefHeight="83.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hours" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Seconds" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" visible="false" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00" textAlignment="CENTER" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                      <Text fx:id="textError" fill="#80151b" strokeType="OUTSIDE" strokeWidth="0.0" text="errore" textAlignment="CENTER" wrappingWidth="336.13671875">
+                          <font>
+                              <Font name="Roboto" size="30.0" />
+                          </font>
+                      </Text>
+                  <GridPane prefHeight="89.0" prefWidth="707.0">
+                    <columnConstraints>
+                      <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="38.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXTextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="247.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto" size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Message" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Suond" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </Text>
+                        <JFXListView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="186.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="702.0">
+                     <children>
+                        <JFXButton prefHeight="77.0" prefWidth="153.0" text="START">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="77.0" prefWidth="153.0" text="RESET">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+        </Pane>
+    </children>
+</GridPane>

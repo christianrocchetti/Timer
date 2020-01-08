@@ -4,6 +4,7 @@ module RoutineTimer {
     // non è stata richiesta verra' laciato un errore
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
     // Le direttive opens, opens .. to ed open sono utili invece per
     // l’accessibilità dei package verso altri moduli. Utilizzando opens,
