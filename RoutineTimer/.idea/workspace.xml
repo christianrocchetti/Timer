@@ -2,23 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da0cd369-c465-4e53-9c76-7fad80943702" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Home.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sounds/BIRD1-2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/SecondaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openjfx/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/PrimaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openjfx/SecondaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/primary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/secondary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/primary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/secondary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -42,13 +52,21 @@
     </option>
   </component>
   <component name="ProjectId" id="1VOJbEF8nFiSl584yA0SB1dw0p4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path" value="C:\_My_Project\RoutineTimer\RoutineTimer" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -59,12 +77,19 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2992126" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.openjfx" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\_My_Project\RoutineTimer\RoutineTimer\src\main\resources\css" />
+      <recent name="C:\_My_Project\RoutineTimer\RoutineTimer\src\main\resources\Font" />
+      <recent name="C:\_My_Project\RoutineTimer\RoutineTimer\src\main\resources" />
       <recent name="C:\_My_Project\RoutineTimer\RoutineTimer\src\main\resources\sounds" />
       <recent name="C:\_MyProjct\hellofx\src\main\resources" />
     </key>
@@ -119,53 +144,109 @@
       <workItem from="1578147350655" duration="7871000" />
       <workItem from="1578160646430" duration="7922000" />
       <workItem from="1578237832072" duration="1801000" />
-      <workItem from="1578416556129" duration="3473000" />
+      <workItem from="1578416556129" duration="8008000" />
+      <workItem from="1578581274156" duration="28000" />
+      <workItem from="1578586984097" duration="39910000" />
+      <workItem from="1578738439577" duration="8837000" />
+      <workItem from="1578908652297" duration="16694000" />
+      <workItem from="1578960168416" duration="635000" />
+      <workItem from="1579018454015" duration="1338000" />
+      <workItem from="1580244592193" duration="341000" />
+      <workItem from="1580244954555" duration="4540000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="677" y="179" key="#App" timestamp="1578147836541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="179" key="#App/0.0.1920.1040@0.0.1920.1040" timestamp="1578147836541" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578147488045">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578609988496">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578147488045" />
-    <state width="1877" height="127" key="GridCell.Tab.0.bottom" timestamp="1578240248143">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578609988496" />
+    <state x="682" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580245368323">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580245368323" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578699610832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578699610832" />
+    <state x="1133" y="287" key="FileChooserDialogImpl" timestamp="1580244919850">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1133" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580244919850" />
+    <state width="1877" height="436" key="GridCell.Tab.0.bottom" timestamp="1580248639442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="127" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578182801747" />
     <state width="1877" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1578168012969" />
-    <state width="1877" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578240248143" />
-    <state width="1877" height="127" key="GridCell.Tab.0.center" timestamp="1578240248143">
+    <state width="1877" height="436" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580248639442" />
+    <state width="1877" height="436" key="GridCell.Tab.0.center" timestamp="1580248639442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="127" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578182801747" />
     <state width="1877" height="127" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1578168012969" />
-    <state width="1877" height="127" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578240248143" />
-    <state width="1877" height="127" key="GridCell.Tab.0.left" timestamp="1578240248143">
+    <state width="1877" height="436" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580248639442" />
+    <state width="1877" height="436" key="GridCell.Tab.0.left" timestamp="1580248639442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="127" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578182801747" />
     <state width="1877" height="127" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1578168012969" />
-    <state width="1877" height="127" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578240248143" />
-    <state width="1877" height="127" key="GridCell.Tab.0.right" timestamp="1578240248143">
+    <state width="1877" height="436" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580248639442" />
+    <state width="1877" height="436" key="GridCell.Tab.0.right" timestamp="1580248639442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="127" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578182801747" />
     <state width="1877" height="127" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1578168012969" />
-    <state width="1877" height="127" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578240248143" />
-    <state x="217" y="0" key="SettingsEditor" timestamp="1578147524170">
+    <state width="1877" height="436" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580248639442" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1578960061346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="217" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578147524170" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1578416559412">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578960061346" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1578960061346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578416559412" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578960061346" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1578960061346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578960061346" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1578960061346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578960061346" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1578591926194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578591926194" />
+    <state x="557" y="93" width="1048" height="892" key="SettingsEditor" timestamp="1580245299133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="93" width="1048" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580245299133" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1579018455147">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579018455147" />
+    <state x="785" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580244887665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="785" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1580244887665" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578671867276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578671867276" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RoutineTimer$App.ic" NAME="App Coverage Results" MODIFIED="1578690901819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.openjfx.*</FILTER>
+    </SUITE>
   </component>
 </project>

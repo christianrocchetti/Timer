@@ -1,0 +1,516 @@
+@font-face {
+    src: url('font/Roboto-Thin.ttf');
+}
+@font-face {
+    src: url('font/Roboto-Bold.ttf');
+}
+@font-face {
+    src: url('font/Roboto-Medium.ttf');
+}
+@font-face {
+    src: url('font/Roboto-Regular.ttf');
+}
+
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.glyph-icon
+{
+    -fx-fill: -fx-primarytext;
+}
+
+.button{
+/*
+    -fx-shape: "M2.88235294,0.149128824 C1.29047347,0.149128824 0,1.43960353 0,3.03148176 L0,31.8550235 C0,33.4469059 1.29047347,34.7373765 2.88235294,34.7373765 C4.47423241,34.7373765 27.4815351,20.0025824 28,19.5020824 C28.5430262,18.9779059 28.8235294,18.2576471 28.8235294,17.4432588 C28.8235294,16.6288706 28.5430262,15.9086076 28,15.3844312 C27.4815351,14.8839724 4.47423241,0.149128824 2.88235294,0.149128824 L2.88235294,0.149128824 Z";
+ */
+    -fx-alignment:  center;
+    /*-fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;*/
+    /*-fx-background-radius: 20px;*/
+    /*-fx-font-size: 14pt;*/
+}
+
+.jfx-button .jfx-rippler {
+    -jfx-Rippler-disabled: true;
+}
+
+
+/*--------- NEW ----------*/
+/* set default fill of svg path */
+/*.icon-button .button-icon {
+    -fx-fill: #888888;
+}
+
+!* set default fill of svg path *!
+.icon-button:focused {
+    -fx-background-color: lightblue;
+    -fx-background-radius: 0;
+}
+
+!* remove default button style & set size *!
+.icon-button {
+    -fx-background-color: transparent, transparent, transparent, transparent, transparent;
+    -fx-pref-height: 30;
+    -fx-pref-width: 30;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-max-height: 30;
+    -fx-max-width: 30;
+}
+
+!* modify svg path fill for hovered/pressed button *!
+.icon-button:pressed .button-icon,
+.icon-button:hover .button-icon {
+    -fx-fill: #444444;
+}*/
+
+
+/*--------- NEW ---------*/
+
+
+
+
+.text-field
+{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size : 25pt;
+    -jfx-focus-color: -fx-secondary;
+}
+
+.text-field-small
+{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size : 18pt;
+    -jfx-focus-color: -fx-secondary;
+}
+
+.text-title-time
+{
+    -fx-fill: -fx-secondary;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 40pt;
+}
+
+.text-title {
+    -fx-fill: white;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 40pt;
+}
+
+.text-subtitle {
+    -fx-fill: white;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 30pt;
+
+}
+
+
+.check-box{
+    -fx-text-fill: -fx-secondary;
+    -jfx-checked-color: -fx-primary;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 10pt;
+}
+
+/*----------------------------------------------;*/
+
+.combo-box-base{
+    /*-fx-prompt-text-fill: -fx-secondary;*/
+    -jfx-focus-color: -fx-secondary;
+
+    -jfx-text-fill: red;
+    -jfx-prompt-text-fill: red;
+}
+
+
+.combo-box .list-view{
+    /*-fx-prompt-text-fill: -fx-secondary;*/
+    -fx-background-color: -fx-secondary;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+
+
+}
+
+.combo-box .list-cell
+{
+    -fx-background: grey;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 15;
+    -fx-text-fill: -fx-secondary;
+
+}
+
+
+
+/*----------------------------------------------;*/
+
+
+
+
+/*Login Screen Specific*/
+
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: #ef5350;
+    -jfx-focus-color: #ef5350;
+}
+
+/*Main Screen CSS Styling starts here*/
+
+/*TablPane styling*/
+.tab{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 10pt; 
+}
+
+
+.tab-main{
+    -fx-pref-height : 60;
+    -fx-max-height : 60;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+    -fx-background-color: -fx-secondary;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -fx-primary;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: derive(-fx-primary, -50%);
+}
+
+/*Menu bar Styling*/
+.menu-bar{
+    -fx-font-size: 14;
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+
+.context-menu {
+    -fx-background-color:  derive(-fx-primary, 20%);
+    -fx-font-size: 14;
+    -fx-min-width: 150px;
+}
+
+/*Hamburger Styling*/
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane
+{
+    -fx-background-color: -fx-secondary;
+    -fx-background-radius: 5px;
+}
+
+/*Toolbar buttons*/
+.toolbar-button
+{
+    -fx-border-color: transparent;
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+.toolbar-button:hover
+{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.toolbar-button:hover .glyph-icon, .toolbar-button:hover .glyph-icon
+{
+    -fx-fill: -fx-primary;
+}
+
+/*Text styling*/
+.main-text
+{
+    -fx-fill: -fx-secondary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+.submission-container{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+
+/*Dialog styling*/
+
+dialog-pane{
+    -fx-border-color:-fx-secondary;;
+    -fx-border-width:2.0px;
+}
+
+/**Costumization of The Bar where the buttons are located**/
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color:-fx-primary;
+}
+
+/* !! NON CAMBIA NULLA !! */
+.dialog-pane > .content.label {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size:16.0px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane .header-panel {
+    -fx-background-color: -fx-primary;
+}
+
+.dialog-pane .header-panel .label{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill:white;
+    -fx-font-size:20.0px;
+    -fx-font-family: 'Roboto Bold';
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill:black;
+    -fx-wrap-text: true;
+    -fx-cursor:hand;
+}
+
+
+
+/*
+-------------
+ */
+.jfx-layout-actions
+{
+    -fx-hgap:8;
+}
+
+/*Chart Styling*/
+.data0.chart-pie{
+    -fx-pie-color: -fx-secondary;
+    -fx-border-color: derive(-fx-secondary, -30%);
+}
+.data1.chart-pie{
+    -fx-pie-color: derive(-fx-primary, 30%);
+    -fx-border-color: derive(-fx-primary, 30%);
+}
+.chart-pie-label
+{
+    -fx-fill : derive(-fx-secondary, -5%);
+}
+
+/*About window*/
+.about-text{
+    -fx-fill: -fx-secondary;
+}
+
+.about-button{
+    -fx-border-color: transparent;
+}
+
+/*Custom window background*/
+.custom-pane{
+    -fx-background-color: derive(-fx-primary, 5%);
+}
+
+/*TableView Default*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 16px; 
+    -fx-border-color: derive(-fx-secondary, -60%);
+}
+.table-view:focused{
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primary;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}
+
+
+/*JFXDialog styling*/
+.jfx-layout-heading
+{
+    -fx-background-color: -fx-color-1;
+}
+.jfx-layout-heading .label
+{
+    -fx-text-fill: white;
+    -fx-font-size: 12pt;
+}
+.jfx-layout-body, .jfx-layout-actions{
+    -fx-background-color: -fx-primary;   
+}
+.jfx-layout-body .label
+{
+    -fx-text-fill: white;
+    -fx-padding: 20px 0 0 0;
+}
+
+
+/*Dashboard label*/
+.not-available 
+{
+    -fx-background-radius: 5px;
+    -fx-fill: derive(blue, 80%);
+    -fx-cursor: hand;
+}
+
+/*Checkbox*/
+
+
+
+/*Progrss bar*/
+
+.progress-bar-main .track{
+    -fx-background-color: -fx-primary;
+}
+.progress-bar-main .bar{
+    -fx-background-color: -fx-secondary;
+    -fx-padding: 5px;
+}
+
+.common-label{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 12pt;
+}
+
+/*Alert Dialog
+
+.custom-alert{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+}
+
+.custom-alert > *.button-bar > *.container{
+    -fx-background-color: -fx-primary;
+}
+
+.custom-alert > .header-panel .button{
+    -fx-text-fill: red;
+}
+
+.custom-alert > *.label.content{
+    -fx-font-size: 1px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.custom-alert .header-panel{
+    -fx-font-family: "Roboto Medium";
+    -fx-background-color: "#B2B2B2";
+    -fx-text-fill: red;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill : green;
+    -fx-highlight-fill:	green;
+    -fx-highlight-text-fill: green;
+    -fx-stroke: green;
+}
+*/
+/* Context menu */
+
+.colored-context-menu .menu-item:focused {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: black;
+}
+
+.colored-context-menu .menu-item:focused .label {
+    -fx-text-fill: black;
+}

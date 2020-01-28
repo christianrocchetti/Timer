@@ -1,26 +1,19 @@
 module RoutineTimer {
-    // il modulo richiede le librerie "javafx.controls" e "javafx.fxml"
-    // se il file del package cerca di importare una libreria che qui
-    // non è stata richiesta verra' laciato un errore
+    // Usiamo la direttiva "requires" richiede un certo package
+    // per esempio può richiedere i package "javafx.controls" e "javafx.fxml"
+    // se il file del package cerca di importare una package che qui
+    // non è stato richiesto verra' laciato un errore
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
     requires java.desktop;
+    requires com.jfoenix;
+    requires org.json;
+    requires net.harawata.appdirs;
 
-    // Le direttive opens, opens .. to ed open sono utili invece per
-    // l’accessibilità dei package verso altri moduli. Utilizzando opens,
-    // seguita dal nome di un package del modulo, stiamo dicendo che le
-    // classi public (ed i loro campi e metodi public e protected)
-    // all’interno del package sono accessibili in altri moduli soltanto
-    // a runtime, consentendo l’accesso con reflection a tutti i tipi
-    // all’interno delle classi del package.
-    //
-    // opens..to consente di specificare i moduli verso i quali
-    // quanto detto precedentemente è possibile.
+    // Usiamo la direttiva "opens" per conentire la reflection su un determinato package
     opens org.openjfx to javafx.fxml;
 
-    // In questo caso il modulo esporta il package it.html.spi contenente
-    // l’interfaccia IProblemProvider e la sua classe Problem. Ciò abilita
-    // moduli che implementano IProblemProvider ad accedere
-    // all’implementazione fornita dal modulo
+    // Usiamo la  direttiva "export" per esporre tutti i membri pubblici di un determinato package
     exports org.openjfx;
 }

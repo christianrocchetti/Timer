@@ -50,17 +50,17 @@
                               <Font name="Roboto Medium" size="40.0" />
                            </font>
                         </Text>
-                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.rowIndex="1">
+                        <JFXTextField fx:id="hoursTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.rowIndex="1">
                            <font>
                               <Font size="30.0" />
                            </font>
                         </JFXTextField>
-                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <JFXTextField fx:id="minutesTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font size="30.0" />
                            </font>
                         </JFXTextField>
-                        <JFXTextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <JFXTextField fx:id="secondsTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="178.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <font>
                               <Font size="30.0" />
                            </font>

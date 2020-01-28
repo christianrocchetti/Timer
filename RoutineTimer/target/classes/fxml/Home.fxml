@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Controller">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="0.0" valignment="CENTER" />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="720.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="-4.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="720.0" spacing="10.0">
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="720.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="69.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="174.0" minHeight="0.0" prefHeight="75.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title" text="Hours" textAlignment="CENTER">
+                           <font>
+                              <Font name="Rockwell" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title" text="Minutes" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title" text="Seconds" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="hoursTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#setZeroHours" prefHeight="50.0" prefWidth="130.0" text="00" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="minutesTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#setZeroMinutes" prefHeight="50.0" prefWidth="130.0" text="00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="secondsTextFiled" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#setZeroSeconds" prefHeight="50.0" prefWidth="130.0" text="00" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text fx:id="hoursCounter" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title-time" text="00" textAlignment="CENTER" visible="false" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="minutesCounter" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title-time" text="00" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="secondsCounter" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-title-time" text="00" textAlignment="CENTER" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="40.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="720.0">
+                    <columnConstraints>
+                      <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="38.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXTextField fx:id="messageField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#messageEmpy" prefHeight="54.0" prefWidth="247.0" styleClass="text-field-small" text="Default Message" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto" size="20.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-subtitle" text="Message" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-subtitle" text="Suond" textAlignment="CENTER">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="soundComboBox" prefHeight="36.0" prefWidth="185.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <VBox alignment="CENTER_LEFT" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="133.0" spacing="10.0">
+                     <children>
+                        <JFXCheckBox fx:id="minimizeCheckBox" prefWidth="130.0" text="Minimize window" />
+                        <JFXCheckBox fx:id="saveCheckBox" prefHeight="20.0" prefWidth="130.0" text="Save setting" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="720.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="reset" onAction="#resetCounter" prefHeight="60.0" prefWidth="60.0" ripplerFill="#08ff2d">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="playStop" focusTraversable="false" onAction="#inputButtonPlayStop" prefHeight="60.0" prefWidth="60.0">
+                           <font>
+                              <Font name="Roboto Medium" size="30.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+        </Pane>
+    </children>
+
+</GridPane>
