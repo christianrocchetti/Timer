@@ -8,7 +8,8 @@ import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
-public class Animation {
+public class MyAnimation {
+
     public static void splashAnimation(Region pane) {
         JFXFillTransition transition = new JFXFillTransition();
         transition.setDuration(Duration.millis(1500));
@@ -32,6 +33,5 @@ public class Animation {
         SequentialTransition seqTran = new SequentialTransition(step1, step2, step3);
         seqTran.play();
     }
-
 
 }
