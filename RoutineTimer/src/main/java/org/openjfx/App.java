@@ -9,9 +9,8 @@ import javafx.stage.Stage;
 import net.harawata.appdirs.AppDirsFactory;
 import org.json.JSONObject;
 
-import java.awt.*;
+
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 /**
@@ -38,7 +37,8 @@ public class App extends Application {
             if (homeController.saveCheckBox.isSelected()) {
                 if(getHomeController().saveCheckBox.isSelected()){
                     JSONObject settingJson = new JSONObject();
-                    String appPahtSettingSting = AppDirsFactory.getInstance().getUserDataDir(null, null, "appTimerJava");
+                    String appPahtSettingSting = AppDirsFactory.getInstance()
+                            .getUserDataDir(null, null, "appTimerJava");
 
                     String inputHours = App.getHomeController().hoursTextFiled.getText();
                     String inputMinutes = App.getHomeController().minutesTextFiled.getText();
@@ -53,7 +53,8 @@ public class App extends Application {
                     settingJson.put("Minutes", inputMinutes);
                     settingJson.put("Seconds", inputSeconds);
                     settingJson.put("Message", App.getHomeController().messageField.getText());
-                    settingJson.put("Minimize", Boolean.toString(App.getHomeController().minimizeCheckBox.isSelected()));
+                    settingJson.put("Minimize", Boolean.toString(App
+                            .getHomeController().minimizeCheckBox.isSelected()));
                     settingJson.put("Sound", App.getHomeController().soundComboBox.getValue());
                     settingJson.put("Save", Boolean.toString(App.getHomeController().saveCheckBox.isSelected()));
 
@@ -64,11 +65,14 @@ public class App extends Application {
         });
 
         stage.setTitle("Timer");
-        // Per settare la grandezza minima della finistra
-        stage.setMinHeight(stage.getHeight());
-        stage.setMinWidth(stage.getWidth());
+
 
         stage.show();
+
+        // Per settare la grandezza minima della finistra
+        // !! deve essere settata dopo "stage.show" !!
+        stage.setMinHeight(stage.getHeight());
+        stage.setMinWidth(stage.getWidth());
     }
 
 

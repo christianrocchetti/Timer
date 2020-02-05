@@ -1,6 +1,5 @@
 package org.openjfx;
 
-
 import javafx.scene.layout.Region;
 import javafx.scene.shape.SVGPath;
 import org.json.JSONObject;
@@ -27,7 +26,8 @@ public class Utils {
 
     /**
      * Scrive il file di default
-     * @param file percorso del file
+     *
+     * @param file        percorso del file
      * @param settingJson JSON con il contenuto da salvare
      */
     public static void setSetting(Path file, JSONObject settingJson) {
@@ -41,7 +41,8 @@ public class Utils {
     /**
      * Verifica se la file di default esiste, in caso contrario crea il file di default e
      * scrive il file di default
-     * @param file percorso del file
+     *
+     * @param file        percorso del file
      * @param settingJson JSON con il contenuto da salvare
      */
     public static void checkFileSettings(Path file, JSONObject settingJson) {
@@ -50,8 +51,7 @@ public class Utils {
                 Files.createFile(file);
                 setSetting(file, settingJson);
             }
-        }
-        catch (AccessDeniedException e) {
+        } catch (AccessDeniedException e) {
             Error.errorWithSolution(e, "Impossible to save the settings",
                     "try to start the application how administrator/root user");
         } catch (NoSuchFileException e) {
@@ -66,6 +66,7 @@ public class Utils {
 
     /**
      * Verifica se la cartella di default esiste, in caso contrario crea il cartella di default
+     *
      * @param directory percorso della direcotory
      */
     public static void checkDirectorySetting(Path directory) {

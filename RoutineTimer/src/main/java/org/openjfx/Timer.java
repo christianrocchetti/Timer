@@ -9,16 +9,22 @@ import javafx.util.Duration;
 
 public class Timer {
 
-    private static Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), evt -> updateTime()));
-    private static Integer animationTime;
-    private static State state = State.INITIALIZED;
+    private Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(1), evt -> updateTime()));
+    private Integer animationTime;
+    private State state = State.INITIALIZED;
 
-    private static void updateTime() {
+    Timer(){
+        this.timeline = new Timeline(new KeyFrame(Duration.seconds(1), evt -> updateTime()));
+        state = State.INITIALIZED;
+        animationTime = 0;
+    }
+
+    private void updateTime() {
         animationTime -= 1;
         setTime();
     }
 
-    private static void setTime() {
+    private void setTime() {
         int hours = animationTime / 3600;
         int minutes = (animationTime / 60) - (hours * 60);
         int seconds = animationTime - ((hours * 60) + (minutes * 60));
@@ -36,7 +42,7 @@ public class Timer {
      * @param inputMinutes m - minuti
      * @param inputSeconds s - secondi
      */
-    private static void timerStart(String inputHours, String inputMinutes, String inputSeconds) {
+    private void timerStart(String inputHours, String inputMinutes, String inputSeconds) {
         // Tolgo la visibilita' alle caselle di input(TextFieled) e do visibilita ai Counter(Text)
         App.getHomeController().hoursTextFiled.setVisible(false);
         App.getHomeController().minutesTextFiled.setVisible(false);
@@ -97,13 +103,13 @@ public class Timer {
         timerPlay();
     }
 
-    public static void timerStop() {
+    public void timerStop() {
         state = State.STOPPED;
         timeline.pause();
         App.getHomeController().playStop.setGraphic(Utils.covertSvgToRegion(App.getHomeController().svgPlay, 40));
     }
 
-    public static void timerPlay() {
+    public void timerPlay() {
         timeline.play();
         state = State.STARTED;
         App.getHomeController().playStop.setGraphic(Utils.covertSvgToRegion(App.getHomeController().svgStop, 40));
@@ -113,7 +119,7 @@ public class Timer {
      * Funzione che inizzializza il timer e in caso posivo ivoaca splashAnimation e timeStart
      * in caso negativo ivoca shakekeAnimation e non ritorna niente
      * */
-    public static void timerInitialization() {
+    public void timerInitialization() {
         String inputHours = App.getHomeController().hoursTextFiled.getText();
         String inputMinutes = App.getHomeController().minutesTextFiled.getText();
         String inputSeconds = App.getHomeController().secondsTextFiled.getText();
@@ -142,7 +148,7 @@ public class Timer {
         timerStart(inputHours, inputMinutes, inputSeconds);
     }
 
-    public static void timerReset() {
+    public void timerReset() {
         // Nel caso in cui non è stato inserito un input valido la funzione si interrompe
         if ((App.getHomeController().hoursTextFiled.getText().equals("00")
                 || App.getHomeController().hoursTextFiled.getText().isEmpty())
@@ -183,7 +189,7 @@ public class Timer {
     }
 
 
-    public static State getState() {
+    public State getState() {
         return state;
     }
 

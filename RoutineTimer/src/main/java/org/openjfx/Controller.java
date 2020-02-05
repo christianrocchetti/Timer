@@ -23,8 +23,6 @@ import java.util.HashMap;
 import java.util.function.UnaryOperator;
 
 
-
-
 public class Controller {
 
     @FXML
@@ -70,9 +68,10 @@ public class Controller {
             ",32 16,32 C7.164,32 0,24.836 0,16 C0,7.164 7.164,0 16,0 C20.801,0 25.332,2.387 28.266,5.734 L" +
             "32,2 L32,12 L22,12 Z";
 
+    private Timer timer = new Timer();
 
 
-    public String getPathSoundMap(String key){
+    public String getPathSoundMap(String key) {
         return soundMap.get(key);
     }
 
@@ -96,7 +95,7 @@ public class Controller {
         Utils.checkDirectorySetting(appPahtSettingDirctory);
         Utils.checkFileSettings(appPathSettingFile, settingJsonDefault);
         try {
-            String setting = new String(Files.readAllBytes(appPathSettingFile ));
+            String setting = new String(Files.readAllBytes(appPathSettingFile));
 
             JSONObject settingJson = new JSONObject(setting);
             hoursTextFiled.setText(settingJson.getString("Hours"));
@@ -118,21 +117,21 @@ public class Controller {
     public void inputButtonPlayStop(ActionEvent mouseEvent) throws Exception {
         // E' nello stato "STARTED" quindi nel momento in cui viene richimata la funzione
         // passa allo stato "STOPPED"
-        switch (Timer.getState()) {
+        switch (timer.getState()) {
             // Se è nello stato di INITIALIZED il timer viene inizzializzato e le animazione avviate
             case INITIALIZED:
-                Timer.timerInitialization();
-                Timer.timerPlay();
+                timer.timerInitialization();
+                timer.timerPlay();
                 break;
             // Se è nello stato di STARTED l'animazioni vengono stoppate
             // e lo fare entrare un stato di STOPPED
             case STARTED:
-                Timer.timerStop();
+                timer.timerStop();
                 break;
             // Se è nello stato di STOPPED l'animazioni vengono riavviate
             // e lo fare entrare un stato di STARTED
             case STOPPED:
-                Timer.timerPlay();
+                timer.timerPlay();
                 break;
         }
     }
@@ -140,7 +139,7 @@ public class Controller {
 
     @FXML
     public void resetCounter(ActionEvent event) {
-        Timer.timerReset();
+        timer.timerReset();
     }
 
 
@@ -154,7 +153,8 @@ public class Controller {
         soundMap.put("Vintage Alarm Clock", "/sounds/Old_Alarm_Clock.wav");
         soundMap.put("Digital Alarm Clock", "/sounds/digital_alarm_clock.wav");
         soundMap.put("Sweet Sound", "/sounds/sweet_sound.wav");
-        soundComboBox.getItems().addAll("No Sound", "Bird", "Vintage Alarm Clock", "Digital Alarm Clock", "Sweet Sound");
+        soundComboBox.getItems().addAll("No Sound", "Bird"
+                , "Vintage Alarm Clock", "Digital Alarm Clock", "Sweet Sound");
         soundComboBox.valueProperty().addListener((obs, oldval, newval) -> {
             if (newval != null && !newval.equals("No Sound"))
                 Utils.playAudio(getPathSoundMap(newval));

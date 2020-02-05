@@ -10,8 +10,6 @@ import javafx.stage.Stage;
 
 public class Error {
 
-
-
     public static void errorWotSolution(Exception error, String myMessageError){
         windowError(error, myMessageError, "Not solution ");
     }
@@ -19,7 +17,6 @@ public class Error {
     public static void errorWithSolution(Exception error, String myMessageError, String soultion){
         windowError(error, myMessageError, "Solution: " + soultion);
     }
-
 
     private static void windowError(Exception error, String myMessageError, String solution) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
