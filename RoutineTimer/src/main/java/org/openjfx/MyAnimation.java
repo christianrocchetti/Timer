@@ -10,6 +10,8 @@ import javafx.util.Duration;
 
 public class MyAnimation {
 
+    private MyAnimation(){}
+
     public static void splashAnimation(Region pane) {
         JFXFillTransition transition = new JFXFillTransition();
         transition.setDuration(Duration.millis(1500));

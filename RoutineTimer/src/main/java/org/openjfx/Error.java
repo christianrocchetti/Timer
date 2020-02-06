@@ -10,6 +10,8 @@ import javafx.stage.Stage;
 
 public class Error {
 
+    private Error(){}
+
     public static void errorWotSolution(Exception error, String myMessageError){
         windowError(error, myMessageError, "Not solution ");
     }

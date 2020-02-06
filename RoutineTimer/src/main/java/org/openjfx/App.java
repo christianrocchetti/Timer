@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import net.harawata.appdirs.AppDirsFactory;
 import org.json.JSONObject;
 
-
 import java.io.IOException;
 import java.nio.file.Paths;
 

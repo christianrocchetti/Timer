@@ -12,6 +12,8 @@ import java.nio.file.*;
 
 public class Utils {
 
+    private Utils(){}
+
     public static Region covertSvgToRegion(String svg, int size) {
         SVGPath svgPlay = new SVGPath();
         svgPlay.setContent(svg);
