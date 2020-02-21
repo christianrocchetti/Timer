@@ -5,14 +5,17 @@
     <groupId>org.openjfx</groupId>
     <artifactId>RoutineTimer</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <javafx.version>11</javafx.version>
     </properties>
 
-    <dependencies>
 
+    <dependencies>
 
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -63,37 +66,70 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.21</version>
         </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
+
+        <!-- da toglire ?? -->
 
 
     </dependencies>
 
+
     <build>
         <plugins>
+
+            <!-- maven plugins
+            verificare se sono da togliere ??
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>${maven.compiler.release}</release>
+                    <release>${maven.compiler.release}dasa</release>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.3</version>
                 <configuration>
-                    <release>${maven.compiler.release}</release>
+                    <release>${maven.compiler.release}dsadascccc</release>
                     <jlinkImageName>hellofx</jlinkImageName>
                     <launcher>launcher</launcher>
                     <mainClass>hellofx/org.openjfx.App</mainClass>
                 </configuration>
             </plugin>
+
+-->
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <index>true</index>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                        <manifestEntries>
+                            <mode>development</mode>
+                            <url>${project.url}</url>
+                            <key>value</key>
+                        </manifestEntries>
+
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.openjfx.App</mainClass>
+                        </manifest>
+
+                    </archive>
+                </configuration>
+
+            </plugin>
+
+
         </plugins>
     </build>
 </project>

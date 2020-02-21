@@ -27,7 +27,7 @@ public class Timer {
     private void setTime() {
         int hours = animationTime / 3600;
         int minutes = (animationTime / 60) - (hours * 60);
-        int seconds = animationTime - ((hours * 60) + (minutes * 60));
+        int seconds = animationTime - (((hours * 60) * 60) + (minutes * 60));
 
         App.getHomeController().hoursCounter.setText(Integer.toString(hours));
         App.getHomeController().minutesCounter.setText(Integer.toString(minutes));
