@@ -117,6 +117,14 @@
 }
 
 
+.text-alert {
+    -fx-fill: white;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 15pt;
+
+}
+
+
 .check-box{
     -fx-text-fill: -fx-secondary;
     -jfx-checked-color: -fx-primary;

@@ -120,8 +120,9 @@ public class Controller {
         switch (timer.getState()) {
             // Se è nello stato di INITIALIZED il timer viene inizzializzato e le animazione avviate
             case INITIALIZED:
-                timer.timerInitialization();
-                timer.timerPlay();
+                if(timer.timerInitialization()){
+                    timer.timerPlay();
+                }
                 break;
             // Se è nello stato di STARTED l'animazioni vengono stoppate
             // e lo fare entrare un stato di STOPPED
@@ -182,8 +183,7 @@ public class Controller {
                         s = "59";
                     }
                 } catch (Exception e) {
-                    //TODO: ...
-                    //windowError(e);
+                    Error.errorWotSolution(e, "Error");
                 }
                 return s;
             }
@@ -195,7 +195,7 @@ public class Controller {
         };
 
 
-        // Il defoult vi
+
         TextFormatter<String> textFormatter = new TextFormatter<>(converter, secondsTextFiled.getText(), filter);
         TextFormatter<String> textFormatter2 = new TextFormatter<>(converter, minutesTextFiled.getText(), filter);
         TextFormatter<String> textFormatter3 = new TextFormatter<>(converter, hoursCounter.getText(), filter);

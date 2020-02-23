@@ -1,9 +1,15 @@
 package org.openjfx;
 
+import com.sun.javafx.scene.control.skin.ColorPickerSkin;
 import javafx.animation.*;
+import javafx.geometry.Pos;
+import javafx.geometry.VPos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
 import javafx.scene.image.Image;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -81,16 +87,27 @@ public class Timer {
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             DialogPane dialogPane = alert.getDialogPane();
+            Text message = new Text();
+            GridPane content = new GridPane();
+            Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 
             dialogPane.getStylesheets().add(
                     App.class.getResource("/css/dark-theme.css").toExternalForm());
             dialogPane.getStyleClass().add("dialog-button");
+            dialogPane.getStyleClass().add("text-alert");
+
+            message.setText(App.getHomeController().messageField.getText());
+            message.setWrappingWidth(400);
+            message.setFill(Color.web("#FFFFFF"));
+
+            content.setAlignment(Pos.CENTER);
+            content.setMaxWidth(Double.MAX_VALUE);
+            content.add(message, 0, 0);
 
             alert.setTitle("Alert");
+            alert.getDialogPane().setContent(content);
+            alert.setHeaderText("");
 
-            alert.setHeaderText(App.getHomeController().messageField.getText());
-
-            Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
             stage.getIcons().add(new Image(App.class.getResourceAsStream("/icon/timerIcon.png")));
             stage.setAlwaysOnTop(true);
             stage.show();
@@ -119,7 +136,7 @@ public class Timer {
      * Funzione che inizzializza il timer e in caso posivo ivoaca splashAnimation e timeStart
      * in caso negativo ivoca shakekeAnimation e non ritorna niente
      * */
-    public void timerInitialization() {
+    public boolean timerInitialization() {
         String inputHours = App.getHomeController().hoursTextFiled.getText();
         String inputMinutes = App.getHomeController().minutesTextFiled.getText();
         String inputSeconds = App.getHomeController().secondsTextFiled.getText();
@@ -136,7 +153,7 @@ public class Timer {
         // Il tempo è uguale a zero
         if (animationTime == 0) {
             MyAnimation.shakeAnimation(App.getHomeController().playStop);
-            return;
+            return false;
         }
 
         MyAnimation.splashAnimation(App.getHomeController().root);
@@ -146,6 +163,7 @@ public class Timer {
         inputMinutes = inputMinutes.equals("0") ? "00" : inputMinutes;
         inputSeconds = inputSeconds.equals("0") ? "00" : inputSeconds;
         timerStart(inputHours, inputMinutes, inputSeconds);
+        return true;
     }
 
     public void timerReset() {
