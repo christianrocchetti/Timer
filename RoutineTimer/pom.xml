@@ -70,7 +70,6 @@
 
     </dependencies>
 
-
     <build>
         <plugins>
 
@@ -83,7 +82,6 @@
                     <compilerVersion>1.8</compilerVersion>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <release>${maven.compiler.release}</release>
                 </configuration>
             </plugin>
 
