@@ -22,9 +22,11 @@ Download binaries from [here](https://github.com/christianrocchetti/Timer/releas
 
 
 ### Screenshots
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/christianrocchetti/Timer/master/screenshots/Screen1.png" />
 </p>
+
 ### License
 
 This program is licensed under the [GNU GPLv3 License](https://github.com/dubbadhar/gramophy/blob/master/license.txt). 
